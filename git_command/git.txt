@@ -1,0 +1,21 @@
+git init	初始化仓库
+git add <file>	将文件或者文件夹添加到暂存区
+git rm <file>	将文件或者文件夹从暂存区删除,这样是直接到暂存区,用文件管理删除是未被提交到暂存区
+git restore <file>	将未被提交到暂存区的文件取消修改（修改或者删除）
+git restore --staged <file>	 将已经被提交到暂存的文件撤销提交，包括删除。这样操作以后还是需要使用上一条命令来取消修改或者删除
+
+git commit -m "  " 将所有暂存区的文件提交到本地仓库
+
+git ls-files	查看当前库中所有文件
+git config --list 查看git的用户信息
+
+git status 查看当前暂存区状态
+git reflog 查看所有已经发生的git命令操作
+git log 查看当前所有已经提交到仓库的记录
+git log --pretty=oneline 简化信息
+
+git reset --hard HEAD^ 将当前头指针指向最后一次修改的版本
+git reset --hard <commit id> 将当前头指针指向commit对应的版本 版本回退
+
+git rm 文件名   删除文件
+git rm -r 文件夹/   删除文件夹
